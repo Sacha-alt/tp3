@@ -137,7 +137,7 @@ public class TriangleArea {
     }
 
     void printResult() {
-        throw new RuntimeException("Not yet implemented !");
+
     }
 
     private void createBinding() {

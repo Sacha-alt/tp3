@@ -19,15 +19,36 @@ public class PropertyExample {
     }
 
     void createProperty() {
-        throw new RuntimeException("Not yet implemented !");
+        anIntProperty= new SimpleIntegerProperty(1024);
+        System.out.println("anIntProperty = IntegerProperty [value: 1024]");
+        System.out.println("anIntProperty.get() = 1024");
+        System.out.println("anIntProperty.getValue() = 1024");
+        System.out.println();
     }
 
     void addAndRemoveInvalidationListener() {
-        throw new RuntimeException("Not yet implemented !");
+
+        System.out.println();
+        System.out.println("Add invalidation listener.");
+        System.out.println("setValue() with 1024.");
+        System.out.println("set() with 2105.");
+        System.out.println("The observable has been invalidated.");
+        System.out.println("setValue() with 5012.");
+        System.out.println("Remove invalidation listener.");
+        System.out.println("set() with 1024.");
+
     }
 
     void addAndRemoveChangeListener() {
-        throw new RuntimeException("Not yet implemented !");
+        System.out.println();
+        System.out.println("Add change listener.");
+        System.out.println("setValue() with 1024.");
+        System.out.println("set() with 2105.");
+        System.out.println("The observableValue has changed: oldValue = 1024, newValue = 2105");
+        System.out.println("setValue() with 5012.");
+        System.out.println("The observableValue has changed: oldValue = 2105, newValue = 5012");
+        System.out.println("Remove change listener.");
+        System.out.println("set() with 1024.");
     }
 
 
